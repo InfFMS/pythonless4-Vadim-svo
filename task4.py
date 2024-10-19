@@ -2,3 +2,11 @@
 # наибольший общий делитель двух натуральных чисел
 # На входе два числа, на выходе их НОД.
 
+def nod(a, b):
+    if b == 0:
+        return a
+    return nod(b, a%b)
+
+n1 = int(input())
+n2 = int(input())
+print(f'НОД: {nod(n1, n2)}')
