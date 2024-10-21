@@ -54,7 +54,29 @@ def num_wor(num):
             print('девять')
     elif num == 10:
         print('десять')
-    elif num < 20:
+    elif 10 < num < 20:
+        if num % 10 == 1:
+            print('один', end='')
+        elif num % 10 == 2:
+            print('двe', end='')
+        elif num % 10 == 3:
+            print('три', end='')
+        elif num % 10 == 4:
+            print('четыре', end='')
+        elif num % 10 == 5:
+            print('пять', end='')
+        elif num % 10 == 6:
+            print('шесть', end='')
+        elif num % 10 == 7:
+            print('семь', end='')
+        elif num % 10 == 8:
+            print('восемь', end='')
+        elif num % 10 == 9:
+            print('девять', end='')
+        print('надцать')
+    elif num < 10:
+        if num % 10 == 0:
+            print('ноль', end='')
         if num % 10 == 1:
             print('один', end='')
         elif num % 10 == 2:
@@ -73,7 +95,6 @@ def num_wor(num):
             print('восемь', end='')
         elif num % 10 == 9:
             print('девять', end='')
-        print('надцать')
 
 
 num = int(input())
